@@ -1,0 +1,16 @@
+Attack #1 - Insert new row through just `Name` input
+Name:
+
+Attack #2 - Insert two rows using just `Name` input
+Name:
+
+Attack #3 - Insert two rows using both inputs
+Name:
+Comment text:
+
+Attack #4 - Insert two rows using both inputs and some select on the database
+Name:
+Comment text:
+
+Attack #5 - URL injection - this allows to add record via query string
+QueryString:

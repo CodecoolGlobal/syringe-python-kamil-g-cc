@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Syringe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="forum">
+    <h1 class="title">Forum</h1>
+    <form action="{{ url_for('index') }}" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" autocomplete="off">
+        <br/>
+
+        <label for="text">Comment text</label>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    <div class="comments">
+        {% for comment in comments %}
+            <div class="comment">
+                <p class="author"><strong>Author: </strong> {{ comment['name'] }}</p>
+                <p class="text">{{ comment['text'] }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+</html>
