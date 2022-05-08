@@ -1,5 +1,5 @@
 Attack #1 - Insert new row through just `Name` input
-Name:
+Name: ') ;drop table comment;--
 
 Attack #2 - Insert two rows using just `Name` input
 Name:
